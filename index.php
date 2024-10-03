@@ -271,6 +271,26 @@
                         <p>E-Commerce sell Dashboard.</p>
                     </div>
                 </div>
+
+                <div class="col-md-6">
+                    <div class="project-item">
+                        <h3>Event Managemtnt (Axciom Cons).</h3>
+                        <a href="https://github.com/sudho712/Axciom-Consulting-Test-Event-Mangement-Project-" target="_blank">Visit Project</a>
+                        <img src="portfolio/event.png" alt="Another Project" class="img-fluid">
+                        <p>Event management involves the planning, coordination, and execution of events such as conferences, weddings, concerts, and corporate gatherings.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-item">
+                        <h3>Weather Application JAVASCRIPT</h3>
+                        <a href="https://github.com/sudho712/JS-Project-30/tree/main/Weather" target="_blank">Visit Project</a>
+                        <img src="portfolio/weather.png" alt="Yet Another Project" class="img-fluid">
+                        <p> weather application provides real-time updates on current weather conditions and forecasts, allowing users to check temperature, humidity, and other climate-related data for their location or any specified region.</p>
+                    </div>
+                </div>
+               
+
+
             </div>
         </div>
     </section>
