@@ -1,0 +1,44 @@
+<footer style="text-align: center; padding: 2rem; background-color: #1a1a1a; color: white; font-family: Arial, sans-serif;">
+    <!-- Footer Title -->
+    <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;">&copy; 2024 Sudhir Kumar. All Rights Reserved.</p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+        <!-- Quick Links Column -->
+        <div style="flex: 1; min-width: 200px; max-width: 500px;">
+            <h3 style="font-size: 1.4rem; font-weight: bold; color: #00bfff; margin-bottom: 1rem;">Quick Links</h3>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; font-size: 1.1rem; align-items: center;">
+                <li><a href="#home" style="color: #3215dad0; text-decoration: none;">Home</a></li>
+                <li><a href="#portfolio" style="color:  #3215dad0; text-decoration: none;">Portfolio</a></li>
+                <li><a href="#contact" style="color:  #3215dad0; text-decoration: none;">Contact</a></li>
+                <li><a href="#projects" style="color:  #3215dad0; text-decoration: none;">Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information Column -->
+        <div style="flex: 1; min-width: 200px; max-width: 500px;">
+            <h3 style="font-size: 1.4rem; font-weight: bold; color: #00bfff; margin-bottom: 1rem;">Contact</h3>
+            <p style="font-size: 1rem; margin: 0.5rem 0;">
+                <i class="fas fa-phone-alt" style="color: #00bfff; margin-right: 8px; font-size: 1.2rem;"></i>
+                <a href="tel:+918340156549" style="color:  #3215dad0; text-decoration: none; font-size: 1.1rem;">8340156549</a>
+            </p>
+            <p style="font-size: 1rem; margin: 0.5rem 0;">
+                <i class="fas fa-envelope" style="color: #00bfff; margin-right: 8px; font-size: 1.2rem;"></i>
+                <a href="mailto:sudhirkumar.contact@gmail.com" style="color:  #3215dad0; text-decoration: none; font-size: 1.1rem;">sudhirkumar.contact@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Visitor Count Section -->
+    <div style="margin-top: 1rem;">
+        <p style="font-size: 1.1rem;">Live Visitors: <span id="visitor-count">Loading...</span></p>
+    </div>
+</footer>
+
+<script>
+    // Fetch visitor count from the PHP file
+    fetch('visitor_count.php')
+        .then(response => response.text())
+        .then(count => {
+            document.getElementById('visitor-count').textContent = count;
+        });
+</script>
